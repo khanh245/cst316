@@ -3,12 +3,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>KASKBlog : @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/css/bootstrap.min.css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Content/js/bootstrap.min.js")
 </head>
 <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">KASK Blog</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/Post">View All Posts</a></li>
+                <li><a href="/Post/create">Create New Post</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
     @RenderBody()
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)

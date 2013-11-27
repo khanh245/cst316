@@ -4,25 +4,23 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+<h2>Delete Post</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <fieldset>
-    <legend>Post</legend>
-
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Title)
+         <b>@Html.DisplayNameFor(model => model.Title)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Title)
-    </div>
+    </div><br />
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Body)
+         <b>@Html.DisplayNameFor(model => model.Body)</b>
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Body)
-    </div>
+    </div><br />
 </fieldset>
 @using (Html.BeginForm()) {
     <p>
