@@ -13,6 +13,7 @@ namespace KASKBlog
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // Note: used for setting the default route for our application.
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

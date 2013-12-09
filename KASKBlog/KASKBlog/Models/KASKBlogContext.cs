@@ -13,6 +13,8 @@ namespace KASKBlog.Models
         // 
         // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<KASKBlog.Models.KASKBlogContext>());
 
+        // Note: This context is used by the Entity Framework to help with object-relational mapping between database and model.
+
         public KASKBlogContext() : base("name=KASKBlogContext")
         {
         }

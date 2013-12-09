@@ -10,6 +10,7 @@ Created by: Khanh, Khanh2, Smahane, and Andy
 * Visual Studio 2012
 
 ## Build Notes:
+* Note, for the sake of reducing solution size (and as per instructor instructions,) binary files have been deleted from this version of the code.
 * In order to run this application, it is necessary to manually create a database named "KASKBlogDatabase" and import the database structure using the included KASKBlog-database-schema.sql file.
 * When the SQL Server "KASKBlogDatabase" has been created (with schema updated,) open up the KASKBlog solution up in Visual Studio (2012 or later,) and run solution.
 * Note: if project does not run, consider checking the database connectionString(s) in the ~KASKBlog/Web.config file.

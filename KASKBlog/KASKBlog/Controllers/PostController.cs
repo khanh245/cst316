@@ -13,7 +13,7 @@ namespace KASKBlog.Controllers
     {
         private KASKBlogContext db = new KASKBlogContext();
 
-        //
+        // Index is the list of all Posts.
         // GET: /Post/
 
         public ActionResult Index()
@@ -21,7 +21,7 @@ namespace KASKBlog.Controllers
             return View(db.Posts.ToList());
         }
 
-        //
+        // Details is a detailed of a Post.
         // GET: /Post/Details/5
 
         public ActionResult Details(int id = 0)
@@ -34,7 +34,7 @@ namespace KASKBlog.Controllers
             return View(post);
         }
 
-        //
+        // Create (without data) is a way to bring up an HTML form for a new post.
         // GET: /Post/Create
 
         public ActionResult Create()
@@ -42,7 +42,7 @@ namespace KASKBlog.Controllers
             return View();
         }
 
-        //
+        // Create (with data) is a way to save data for a new Post.
         // POST: /Post/Create
 
         [HttpPost]
@@ -58,7 +58,7 @@ namespace KASKBlog.Controllers
             return View(post);
         }
 
-        //
+        // Edit (without data) is a way to bring up an HTML form for an existing Post (with Post id given as a parameter.)
         // GET: /Post/Edit/5
 
         public ActionResult Edit(int id = 0)
@@ -71,7 +71,7 @@ namespace KASKBlog.Controllers
             return View(post);
         }
 
-        //
+        // Edit (with data) is a way to save data for an existing Post (with Post id given as a parameter.)
         // POST: /Post/Edit/5
 
         [HttpPost]
@@ -86,7 +86,7 @@ namespace KASKBlog.Controllers
             return View(post);
         }
 
-        //
+        // Delete is a way to ask if a user wants to really delete an existing Post (with Post id given as a parameter.)
         // GET: /Post/Delete/5
 
         public ActionResult Delete(int id = 0)
@@ -99,7 +99,7 @@ namespace KASKBlog.Controllers
             return View(post);
         }
 
-        //
+        // Delete Confirmed is a way to actually delete a specified, existing Post (with Post id given as a parameter.)
         // POST: /Post/Delete/5
 
         [HttpPost, ActionName("Delete")]
@@ -111,6 +111,7 @@ namespace KASKBlog.Controllers
             return RedirectToAction("Index");
         }
 
+        // Dispose is used to free up unmanaged resources.
         protected override void Dispose(bool disposing)
         {
             db.Dispose();

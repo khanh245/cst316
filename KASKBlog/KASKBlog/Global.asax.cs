@@ -16,11 +16,14 @@ namespace KASKBlog
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            // Note: This is where we register routes for the application.
+            // Routes take a request from the user and direct the user request
+            // to where it needs to go.
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.MapRoute(
-                "Posts Index",                                     // Route name
-                "Posts",                            // URL with parameters
-                new { controller = "Post", action = "Index" }  // Parameter defaults
+                "Posts Index",                                  // Route name
+                "Posts",                                        // URL with parameters
+                new { controller = "Post", action = "Index" }   // Parameter defaults
             );
         }
 
