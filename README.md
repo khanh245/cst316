@@ -1,5 +1,5 @@
 # KASK Blog
-A blog application prototype for CST 316.
+A blog application prototype for CST 316.  
 Created by: Khanh, Khanh2, Smahane, and Andy
 
 ## Technologies Used:
