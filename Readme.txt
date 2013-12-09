@@ -24,10 +24,5 @@ Created by: Khanh, Khanh2, Smahane, and Andy
 * Database is locally hosted, so we use "localhost" for the Data Source parameter in the database Connection String in the ~/KASKBlog/Web.config file.
 * Route information is detailed in the ~/KASKBlog/Global.aspx file (see comments in code for more information.)
 * Our Post model contains attributes such as [Key] and [Required] which mean that an item is a primary key or is a required field (when creating/editing/updating a Post-related object.)
-<<<<<<< HEAD
 * Controller details are described in comments above each major application "action" in the ~/KASKBlog/Controllers/PostController.cs file.
 * Finally, the root route for our application is configured in the ~/KASKBlog/App_Start/RouteConfig.cs file.
-=======
-* Controller details are described in comments above each major application "action" in the ~KASKBlog/Controllers/PostController.cs file.
-* Finally, the root route for our application is configured in the ~KASKBlog/App_Start/RouteConfig.cs file.
->>>>>>> 339d2acb2b149ed890491c596bf5a38dd668f403
